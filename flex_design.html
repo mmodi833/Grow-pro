@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+            display: block;
+        }
+
+        section {
+            display: flex;
+            background-color: aquamarine;
+        }
+
+
+
+        @media(max-width : 800px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        nav {
+            flex: 60%;
+            background-color: blueviolet;
+        }
+
+        article {
+            flex: 40%;
+            background-color: chartreuse;
+        }
+
+        header {
+            background-color: bisque;
+            border-style: solid;
+            border-color: brown;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            margin-top: 4px;
+            height: 40px;
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+
+        li a {
+            color: cornsilk;
+        }
+    </style>
+    <title>Flex Design</title>
+</head>
+
+<body>
+    <h2>Heading Of flex</h2>
+    <header>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, rem.
+    </header>
+    <section>
+        <nav class="fleft">
+            <ul>
+                <li>
+                    <a href="#">Java</a>
+                </li>
+                <li>
+                    <a href="#">C++</a>
+                </li>
+                <li>
+                    <a href="#">Python</a>
+                </li>
+                <li><a href="#">Ruby</a></li>
+            </ul>
+        </nav>
+        <article class="fright">
+            Java is a language of gods!
+        </article>
+    </section>
+    <footer>
+        This is under © 2020
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" oninput="upk()" id="1st" value="0"> + 
+    <input type="number" oninput="upk()" id="2nd" value="0"> = 
+    <span id="res">0</span>
+    <script>
+        function upk(){
+            let st = parseInt(document.getElementById("1st").value);
+            let nd = parseInt(document.getElementById("2nd").value);
+            console.log(st + " " +nd);
+            if(isNaN(st)){
+                st = 0;
+            }
+            if(isNaN(nd)){
+                nd = 0;
+            }
+            document.getElementById("res").innerHTML = st + nd;
+        }
+    </script>
+</body>
+</html>
