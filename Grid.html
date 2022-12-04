@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            height: 40px;
+            text-align: center;
+            background-color: cadetblue;
+            color: white;
+        }
+
+        nav {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            height: 40px;
+        }
+
+        li {
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 10px;
+            display: inline-block;
+        }
+
+
+        #container {
+            height: 150px;
+            display: flex;
+        }
+
+        #right{
+            flex:20%;
+            background-color: antiquewhite;
+        }
+
+        #left{
+            flex: 80%;;
+        }
+        #second{
+            display: flex;
+            height: 150px;
+        }
+        section{
+            background-color: rgb(165, 42, 221);
+            flex: 50%;
+        }
+        article{
+            background-color: cadetblue;
+            flex: 50%;
+        }
+    </style>
+    <title>Header</title>
+</head>
+
+<body>
+    <header>Header Section</header>
+    <nav>
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <span id="left">
+            <div id="fsecond">
+                <section>Section part</section>
+                <article>Article part</article>
+            </div>
+        </span>
+        <span id="right">
+            Sidebar Part
+        </span>
+    </div>
+
+    <summary>
+        Click Here to show Details
+    </summary>
+
+    <footer>
+        Footer Section
+    </footer>
+</body>
+
+</html>
