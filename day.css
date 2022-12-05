@@ -1,0 +1,41 @@
+
+#heading{
+    background-color: greenyellow;
+    text-align: center;
+    height: 70px;
+}
+h1{
+    padding-top: 10px;
+}
+
+img{
+    margin: 10px;
+   margin-left: 60px;
+    height: 150px;
+    width: 150px;
+}
+p{
+    width: 100px;
+    margin-left: 70px;
+}
+body{
+    background-color: lightblue;
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-left: 150px;
+}
+section div{
+    flex:32%;
+    background-color: white;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+}
