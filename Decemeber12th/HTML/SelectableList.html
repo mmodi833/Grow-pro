@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+
+            background-color: white;
+            border: 0px solid white;
+        }
+        ul{
+            border: 1px solid black;
+            width: 200px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <ol></ol>
+    <ul type="none">
+        <button id="l1" onclick="color(l1)" ><li>The First List is here</li></button><br>
+        <button id="l2" onclick="color(l2)"><li>The Second List is here</li></button><br>
+        <button id="l3" onclick="color(l3)"><li>The Third List is here</li></button><br>
+        <button id="l4" onclick="color(l4)"><li>The Fourth List is here</li></button><br>
+        <button id="l5" onclick="color(l5)"><li>The Fifth List is here</li></button>
+    </ul>
+
+
+    <script>
+        // let button = document.querySelector("button");
+        // button.onclick= function(){
+        //     console.log("click");
+        //      button.style.backgroundColor="red";
+        // }
+
+        function color(e){
+            console.log(e);
+           setTimeout(fn(e),1000);
+        //    setTimeout(document.getElementById(e.id).style.backgroundColor='',1000);
+           
+
+        };
+       function fn(e){
+            (document.getElementById(e.id).style.backgroundColor='red')
+        }
+
+    </script>
+    
+</body>
+</html>
