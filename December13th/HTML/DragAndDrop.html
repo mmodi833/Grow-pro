@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="div1" ondrop="drop(event)" ondragover="drOver(event)">What Fruits do you like?
+
+        <li id="l1" draggable="true" ondragstart="drag(event)">Apple</li>
+        <li id="l2" draggable="true" ondragstart="drag(event)">Mango</li>
+        <li id="l3" draggable="true" ondragstart="drag(event)">Banana</li>
+  
+</div>
+
+<div id="div2"  >What Fruits do you like?
+  <ol id="ol2" ondrop="drop(event)" ondragover="drOver(event)" style="width: 100px; height:100px; "></ol>
+
+</div>
+
+<script>
+    function drag(ev){
+        console.log("dragged");
+        ev.dataTransfer.setData("li",ev.target.id);
+    }
+
+    function drop(ev){
+        ev.preventDefault();
+        let li=ev.dataTransfer.getData("li");
+        ev.target.appendChild(document.getElementById(li));
+    }
+
+    function drOver(ev){
+        ev.preventDefault();
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            display: flex;
+            text-align: center;
+        }
+        #temp1,#temp2,h1{
+            flex: 32%;
+        }
+    </style>
+</head>
+<body>
+
+   <div id="div1">
+<template id="temp1">
+    <style>
+        p{
+            width: 300px;
+            border: 1px solid salmon;
+        }
+    </style>
+    <p>This is first temp</p>
+</template>
+<my-temp></my-temp>
+
+<h1 id="h1">
+    This is H1
+</h1>
+
+
+<template id="temp2">
+    <style>
+        p{
+            width: 400px;
+            border: 1px solid salmon;
+        }
+    </style>
+    <p>THis is 2nd temp</p>
+</template>
+
+</div> 
+
+
+<template id="temp3">
+    <style>
+        #p1{
+            
+            border: 1px solid salmon;
+            width: 1200px;
+            text-align: center;
+            
+        }
+    </style>
+    <p id="p1">THis is 3rd temp</p>
+</template>
+
+    
+<script src="../JS/Template.js"></script>
+</body>
+</html>
